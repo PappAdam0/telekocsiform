@@ -32,6 +32,8 @@
             this.lbKimenet = new System.Windows.Forms.ListBox();
             this.btn_Masodik = new System.Windows.Forms.Button();
             this.btn_Harmadik = new System.Windows.Forms.Button();
+            this.btn_Negyedik = new System.Windows.Forms.Button();
+            this.btn_Otodik = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBeolvasas
@@ -46,6 +48,7 @@
             // 
             // lbKimenet
             // 
+            this.lbKimenet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbKimenet.FormattingEnabled = true;
             this.lbKimenet.Location = new System.Drawing.Point(93, 21);
             this.lbKimenet.Name = "lbKimenet";
@@ -72,12 +75,37 @@
             this.btn_Harmadik.TabIndex = 3;
             this.btn_Harmadik.Text = "3. Feladat";
             this.btn_Harmadik.UseVisualStyleBackColor = true;
+            this.btn_Harmadik.Click += new System.EventHandler(this.btn_Harmadik_Click);
+            // 
+            // btn_Negyedik
+            // 
+            this.btn_Negyedik.Enabled = false;
+            this.btn_Negyedik.Location = new System.Drawing.Point(12, 109);
+            this.btn_Negyedik.Name = "btn_Negyedik";
+            this.btn_Negyedik.Size = new System.Drawing.Size(75, 23);
+            this.btn_Negyedik.TabIndex = 4;
+            this.btn_Negyedik.Text = "4. Feladat";
+            this.btn_Negyedik.UseVisualStyleBackColor = true;
+            this.btn_Negyedik.Click += new System.EventHandler(this.btn_Negyedik_Click);
+            // 
+            // btn_Otodik
+            // 
+            this.btn_Otodik.Enabled = false;
+            this.btn_Otodik.Location = new System.Drawing.Point(12, 138);
+            this.btn_Otodik.Name = "btn_Otodik";
+            this.btn_Otodik.Size = new System.Drawing.Size(75, 23);
+            this.btn_Otodik.TabIndex = 5;
+            this.btn_Otodik.Text = "5. Feladat";
+            this.btn_Otodik.UseVisualStyleBackColor = true;
+            this.btn_Otodik.Click += new System.EventHandler(this.btn_Otodik_Click);
             // 
             // frmFo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.btn_Otodik);
+            this.Controls.Add(this.btn_Negyedik);
             this.Controls.Add(this.btn_Harmadik);
             this.Controls.Add(this.btn_Masodik);
             this.Controls.Add(this.lbKimenet);
@@ -95,6 +123,8 @@
         private System.Windows.Forms.ListBox lbKimenet;
         private System.Windows.Forms.Button btn_Masodik;
         private System.Windows.Forms.Button btn_Harmadik;
+        private System.Windows.Forms.Button btn_Negyedik;
+        private System.Windows.Forms.Button btn_Otodik;
     }
 }
 
