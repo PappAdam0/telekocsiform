@@ -124,7 +124,38 @@ namespace telekocsiform
                 }
             }
             btn_Otodik.Enabled = false;
+            btn_Hatodik.Enabled = true;
 
+        }
+
+        private void btn_Hatodik_Click(object sender, EventArgs e)
+        {
+            lbKimenet.Items.Clear();
+            lbKimenet.Items.Add("6. feladat");
+            StreamWriter file = new StreamWriter("utasuzenetek.txt");
+
+            foreach (var igeny in igeny)
+            {
+                int i = igeny.VanAuto(autok);
+
+                if (i > -1)
+                {
+                    file.WriteLine($"{igeny.Azonosito}: Rendszám: {autok[i].Rendszam}, Telefonszám: {autok[i].Telefonszam}");
+                }
+                else
+                {
+                    file.WriteLine($"{igeny.Azonosito}: Sajnos nem sikerült autót találni");
+                }
+            }
+            file.Close();
+            lbKimenet.Items.Add("Adatok fájlba írása megtörtént");
+
+            btn_Hatodik.Enabled = false;
+        }
+
+        private void btn_Kilepes_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

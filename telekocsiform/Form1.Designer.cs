@@ -34,6 +34,9 @@
             this.btn_Harmadik = new System.Windows.Forms.Button();
             this.btn_Negyedik = new System.Windows.Forms.Button();
             this.btn_Otodik = new System.Windows.Forms.Button();
+            this.btn_Hatodik = new System.Windows.Forms.Button();
+            this.btn_Kilepes = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBeolvasas
@@ -50,7 +53,7 @@
             // 
             this.lbKimenet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbKimenet.FormattingEnabled = true;
-            this.lbKimenet.Location = new System.Drawing.Point(93, 21);
+            this.lbKimenet.Location = new System.Drawing.Point(93, 50);
             this.lbKimenet.Name = "lbKimenet";
             this.lbKimenet.Size = new System.Drawing.Size(458, 290);
             this.lbKimenet.TabIndex = 1;
@@ -99,11 +102,44 @@
             this.btn_Otodik.UseVisualStyleBackColor = true;
             this.btn_Otodik.Click += new System.EventHandler(this.btn_Otodik_Click);
             // 
+            // btn_Hatodik
+            // 
+            this.btn_Hatodik.Enabled = false;
+            this.btn_Hatodik.Location = new System.Drawing.Point(12, 167);
+            this.btn_Hatodik.Name = "btn_Hatodik";
+            this.btn_Hatodik.Size = new System.Drawing.Size(75, 23);
+            this.btn_Hatodik.TabIndex = 6;
+            this.btn_Hatodik.Text = "6. Feladat";
+            this.btn_Hatodik.UseVisualStyleBackColor = true;
+            this.btn_Hatodik.Click += new System.EventHandler(this.btn_Hatodik_Click);
+            // 
+            // btn_Kilepes
+            // 
+            this.btn_Kilepes.Location = new System.Drawing.Point(12, 317);
+            this.btn_Kilepes.Name = "btn_Kilepes";
+            this.btn_Kilepes.Size = new System.Drawing.Size(75, 23);
+            this.btn_Kilepes.TabIndex = 7;
+            this.btn_Kilepes.Text = "Kilépés";
+            this.btn_Kilepes.UseVisualStyleBackColor = true;
+            this.btn_Kilepes.Click += new System.EventHandler(this.btn_Kilepes_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(90, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Feladatok kimenetele";
+            // 
             // frmFo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_Kilepes);
+            this.Controls.Add(this.btn_Hatodik);
             this.Controls.Add(this.btn_Otodik);
             this.Controls.Add(this.btn_Negyedik);
             this.Controls.Add(this.btn_Harmadik);
@@ -114,6 +150,7 @@
             this.Name = "frmFo";
             this.Text = "Telekocsi";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -125,6 +162,9 @@
         private System.Windows.Forms.Button btn_Harmadik;
         private System.Windows.Forms.Button btn_Negyedik;
         private System.Windows.Forms.Button btn_Otodik;
+        private System.Windows.Forms.Button btn_Hatodik;
+        private System.Windows.Forms.Button btn_Kilepes;
+        private System.Windows.Forms.Label label1;
     }
 }
 
